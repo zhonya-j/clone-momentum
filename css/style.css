@@ -8,3 +8,8 @@ body {
   background-position: center;
   background-size: cover;
 }
+
+.x-button {
+  background-color: rgba(255, 255, 255, 0);
+  border: 0;
+}
