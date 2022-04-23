@@ -8,8 +8,49 @@ body {
   background-position: center;
   background-size: cover;
 }
-
+.pad-box30 {
+  margin-top: 30%;
+}
+.pad-box5 {
+  margin-top: 5%;
+}
+.pad-box3 {
+  margin-top: 3%;
+}
+.pad-box1 {
+  margin-top: 1%;
+}
 .x-button {
   background-color: rgba(255, 255, 255, 0);
   border: 0;
+}
+#login-form {
+  margin-top: 30%;
+}
+#quote_text {
+  font-size: small;
+}
+#quote_author {
+  font-size: medium;
+}
+.todo-input {
+  width: 225px;
+}
+.todo {
+  background: rgba(255, 255, 255, 0.432);
+  padding-top: 10px;
+  border-radius: 5px;
+  margin-right: 5px !important;
+  margin-left: 5px !important;
+}
+
+footer {
+  position: fixed;
+  padding-top: 10px;
+  left: 0px;
+  bottom: 0px;
+  height: 8%;
+  width: 100%;
+  color: white;
+  background: rgb(0, 0, 0);
 }

@@ -46,4 +46,4 @@ const author = document.querySelector("#quote span:last-child");
 
 const randomNumber = Math.floor(Math.random() * quotes.length);
 quote.innerText = quotes[randomNumber].quote;
-author.innerText = quotes[randomNumber].author;
+author.innerText = "- "+quotes[randomNumber].author+" -";

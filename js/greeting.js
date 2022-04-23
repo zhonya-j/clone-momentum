@@ -1,6 +1,10 @@
 const loginForm = document.querySelector("#login-form");
 const loginInput = document.querySelector("#login-form input");
 const userId = document.querySelector("#userId");
+const on_quote = document.querySelector("#quote");
+const on_todoForm = document.querySelector("#todo-form");
+const on_todoSection = document.querySelector("#todo-section");
+
 
 //const var
 const HIDDEN_CLASSNAME = "hidden";
@@ -16,6 +20,9 @@ function onLoginFormSubmit(event) {
 function paintGreetings(username) {
     userId.classList.remove(HIDDEN_CLASSNAME);
     userId.innerText=`Hello! ${username}`;
+    on_quote.classList.remove(HIDDEN_CLASSNAME);
+    on_todoForm.classList.remove(HIDDEN_CLASSNAME);
+    on_todoSection.classList.remove(HIDDEN_CLASSNAME);
 }
 
 
