@@ -58,6 +58,7 @@ input {
 }
 .todo-input {
   width: 225px;
+  color: white;
 }
 .todo {
   background: rgba(255, 255, 255, 0.432);
