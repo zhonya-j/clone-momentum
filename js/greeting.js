@@ -14,12 +14,16 @@ function onLoginFormSubmit(event) {
     event.preventDefault(); // prevent page refresh
     const typedUsername = loginInput.value;
     loginForm.classList.add(HIDDEN_CLASSNAME);
+    loginForm.parentElement.classList.add(HIDDEN_CLASSNAME);
+    loginForm.parentElement.classList.add(HIDDEN_CLASSNAME);
+    loginForm.parentElement.classList.remove("h-100");
     localStorage.setItem(USERNAME_KEY,typedUsername);
     paintGreetings(typedUsername);
 }
 function paintGreetings(username) {
     userId.classList.remove(HIDDEN_CLASSNAME);
     userId.innerText=`Hello! ${username}`;
+    loginForm.parentElement.classList.remove("h-100");
     on_quote.classList.remove(HIDDEN_CLASSNAME);
     on_todoForm.classList.remove(HIDDEN_CLASSNAME);
     on_todoSection.classList.remove(HIDDEN_CLASSNAME);
@@ -31,6 +35,7 @@ const savedUsername = localStorage.getItem(USERNAME_KEY);
 if (savedUsername === null) {
     //show the form
     loginForm.classList.remove(HIDDEN_CLASSNAME);
+    loginForm.parentElement.classList.remove(HIDDEN_CLASSNAME);
     loginForm.addEventListener("submit", onLoginFormSubmit);
 } else {
     //show the greetings

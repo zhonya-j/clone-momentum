@@ -12,7 +12,7 @@ function onGeoOk(position) {
                 const temperture = document.querySelector("#temperture");
                 const city = document.querySelector("#city");
                 weather.innerText = data.weather[0].main+"    ";
-                temperture.innerText = data.main.temp+"    ";
+                temperture.innerText = data.main.temp+"°C    ";
                 city.innerText = data.name;
             });
 }

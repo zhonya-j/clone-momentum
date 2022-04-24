@@ -12,16 +12,19 @@
 <body>
 
 <!-- login -->
-<form id="login-form" class="container text-center hidden">
-    <input 
+<div class="h-100 row align-items-center hidden">
+<form id="login-form" class="col text-center hidden">
+    <input
+        id="login-input" 
         required="true"
         maxlength="15"
         minlength="3"
         type="text"
         placeholder="What is your name?"
     />
-    <input type="submit" value="Log In" />
+    <input id="input-button" type="submit" value="Log In" />
 </form>
+</div>
 
 
 <!-- greeting -->
@@ -54,15 +57,17 @@
     
 <div class="container hidden" id="todo-section">
     <div class="row">
+        <div class="col"></div>
         <div class="todo col container-sm">
             <ul id="todo-list"></ul>
         </div>
-        <div class="todo col container-sm">
+        <div class="col"></div>
+        <!-- <div class="todo col container-sm">
             text2
         </div>
         <div class="todo col container-sm">
             text3
-        </div>
+        </div> -->
     </div>
 </div> 
 
@@ -72,13 +77,15 @@
 <footer class="text-center">
     <div class="container">
         <div class="row">
-            <div class="col"></div>
+            <div class="col">
+                <h3 id="date"></h3>
+            </div>
             <!-- clock -->
             <div class="col">
                 <h2 id="clock">00 : 00 : 00</h2>
             </div>
             <!-- weather zone -->
-            <div class="col">
+            <div class="col" style="padding-top: 5px;">
                 <span id="weather"></span>
                 <span id="temperture"></span>
                 <span id="city"></span>
